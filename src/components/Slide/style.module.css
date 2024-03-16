@@ -1,0 +1,9 @@
+.images {
+  white-space: nowrap;
+}
+
+.image {
+  pointer-events: none;
+  width: 400px;
+  height: 100%;
+}
