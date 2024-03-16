@@ -28,7 +28,7 @@ const Carousel: FC<CarouselProps> = ({ slides }) => {
     setCurrent((newIndex) => newIndex + 1);
   };
 
-  const handleEndDrag = (e: Event, dragProps: PanInfo) => {
+  const handleEndDrag = (_e: Event, dragProps: PanInfo) => {
     // Get the width of the image container
     const clientWidth = imageContainerRef.current?.clientWidth || 0;
 
@@ -88,7 +88,7 @@ const Carousel: FC<CarouselProps> = ({ slides }) => {
       />
 
       <div>
-        {slides.map((slide, index) => {
+        {slides.map((_slide, index) => {
           const curentDot =
             ((current % slides.length) + slides.length) % slides.length;
           return (
